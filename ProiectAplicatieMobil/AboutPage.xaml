@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProiectAplicatieMobil.AboutPage"
+             Title="AboutPage">
+    <VerticalStackLayout Spacing="10" Margin="10">
+        <HorizontalStackLayout Spacing="10">
+            <Image Source="about_page_img.png"
+                    SemanticProperties.Description="Dealer Shopping List"
+                    HeightRequest="64" 
+                    VerticalOptions="End"/>
+            <Label FontSize="22" FontAttributes="Bold" Text="Car Dealership" VerticalOptions="End" />
+            <Label FontSize="22" Text="v1.0" VerticalOptions="End" />
+        </HorizontalStackLayout>
+        <Label Text="Aceasta aplicatie este dedicata persoanelor care vor sa aibe o metoda m-ai usoara de a vedea diferite modele de masini pe care doreste sa le achzitioneze fara a fii nevoi sa iasa din casa pentru a face acest lucri." />
+        <Label Text="Aplicatia va permite vederea diferitor tipuri de masini aflate in stoc si va permite adugarea acestora la o lista pentru a avea acces mai rapid la acestea." />
+
+    </VerticalStackLayout>
+</ContentPage>

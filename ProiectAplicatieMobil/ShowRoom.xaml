@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProiectAplicatieMobil.ShowRoom"
+             Title="ShowRoom">
+    <ScrollView>
+        <StackLayout>
+        <Label 
+            Text="Bun venit in SHOWROOM-UL nostru!"
+            FontSize="30"
+            FontAttributes="Bold"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+        />
+        <Grid>
+            <Image Source="audi_a5.jpg" 
+                   SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                   HeightRequest="150"
+                   WidthRequest="250"
+                   HorizontalOptions="Start"
+                   VerticalOptions="End" />
+            <Label FontSize="18" FontAttributes="Bold" Text="Audi A5" VerticalOptions="End" HorizontalOptions="Center" />
+            <Label FontSize="18" Text="15000Euros" VerticalOptions="End" HorizontalOptions="End"/>
+        </Grid>
+            <Grid>
+                <Image Source="mercedes_gle.jpg" 
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="105"
+                WidthRequest="250"
+                HorizontalOptions="Start"
+                VerticalOptions="End" />
+                <Label FontSize="18" FontAttributes="Bold" Text="Mercedes GLE" VerticalOptions="End" HorizontalOptions="Center" />
+                <Label FontSize="18" Text="25000Euros" VerticalOptions="End" HorizontalOptions="End" />
+            </Grid>
+            <Grid>
+            <Image Source="porsche_megan.jpg" 
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="150"
+                WidthRequest="250"
+                HorizontalOptions="Start"
+                VerticalOptions="End" />
+            <Label FontSize="18" FontAttributes="Bold" Text="Porsche Megan" VerticalOptions="End" HorizontalOptions="Center" />
+            <Label FontSize="18" Text="30000Euros" VerticalOptions="End" HorizontalOptions="End" />
+        </Grid>
+            <Grid>
+                <Image Source="audi_r8.jpg" 
+                   SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                   HeightRequest="150"
+                   WidthRequest="250"
+                   HorizontalOptions="Start"
+                   VerticalOptions="End" />
+                <Label FontSize="18" FontAttributes="Bold" Text="Audi R8" VerticalOptions="End" HorizontalOptions="Center" />
+                <Label FontSize="18" Text="35000Euros" VerticalOptions="End" HorizontalOptions="End"/>
+            </Grid>
+            <Grid>
+                <Image Source="mercedes_eqb.jpg" 
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="150"
+                WidthRequest="250"
+                HorizontalOptions="Start"
+                VerticalOptions="End" />
+                <Label FontSize="18" FontAttributes="Bold" Text="Mercedes EQB" VerticalOptions="End" HorizontalOptions="Center" />
+                <Label FontSize="18" Text="10000Euros" VerticalOptions="End" HorizontalOptions="End" />
+            </Grid>
+            <Grid>
+                <Image Source="porsche_911.jpg" 
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="150"
+                WidthRequest="250"
+                HorizontalOptions="Start"
+                VerticalOptions="End" />
+                <Label FontSize="18" FontAttributes="Bold" Text="Porsche 911" VerticalOptions="End" HorizontalOptions="Center" />
+                <Label FontSize="18" Text="50000Euros" VerticalOptions="End" HorizontalOptions="End" />
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

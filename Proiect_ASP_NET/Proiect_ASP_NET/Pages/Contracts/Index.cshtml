@@ -1,0 +1,66 @@
+﻿@page
+@model Proiect_ASP_NET.Pages.Contracts.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Contract[0].Client)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contract[0].Car.Brand.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contract[0].Car.Model)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contract[0].Car.Dealer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contract[0].Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contract[0].ContractDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Contract) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Client.FullName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Car.Brand.Name)
+            </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Car.Model)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Dealer.DealerName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContractDate)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
